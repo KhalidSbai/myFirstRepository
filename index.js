@@ -12,9 +12,9 @@ menuItems.forEach((item) => {
 
 //card
 let tableProduit = [
-  { id: 1, taille: 28, prix: 100 },
   { id: 2, taille: 28, prix: 130 },
   { id: 3, taille: 27, prix: 90 },
+  { id: 1, taille: 28, prix: 80 },
   { id: 4, taille: 29, prix: 90 },
   { id: 5, taille: 28, prix: 70 },
   { id: 6, taille: 29, prix: 110 },

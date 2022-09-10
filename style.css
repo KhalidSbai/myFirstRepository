@@ -2,6 +2,16 @@
 
 /* End Variables */
 /* Start Global Rules */
+:root{
+  --headingColor: #222222;
+    --textColor: #465b52;
+    --bgColor: #e3e6f3;
+    --hoverColor: #088178;
+    --whiteColor: #ffffff;
+    --blackColor: #000000;
+    --bkColor: #1a1a1a;
+    --borderColor: #cce7d0;
+}
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +23,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Spartan', sans-serif;
     width: 100vw;
     /* position: relative; */
     overflow-x: hidden;
@@ -52,22 +62,31 @@ ul{
   }
 /* End Global Rules */
 /* Start Header */
-header{
-}
+
 .logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 44px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    font-weight: 900;
-    font-size: 30px;
-    border-bottom: 1px solid gray;
+    font-weight: 600;
+    font-size: 28px;
     letter-spacing: -0.8px;
     margin-bottom: 10px;
+    background-color: var(--bgColor);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 6%);
+    z-index: 9999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 .logo span{
-    color: #ed1c24;
-    font-size: 42px;
+    display: block;
+    color: var(--hoverColor);
+    font-size: 36px;
     transform: rotate(10deg);
 }
 nav{
@@ -117,16 +136,17 @@ nav a:nth-child(4){
 
 /* Start product */
 .product{
+    padding-top: 50px;
     padding-bottom: 45px;
 }
 .product .card{
-    border: 1px solid gray;
-    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+    border-radius: 15px;
     overflow: hidden;
     padding: 10px;
     margin: 10px 0;
     max-width: 100%;
-    background-color: #faf9f9;
+    background-color: --var;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -137,9 +157,13 @@ nav a:nth-child(4){
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    
+    min-height: 400px;
 }
 .product .card img{
-    width: 100%;
+    width: 85%;
     transition: .5s all ;
     
 }
@@ -157,17 +181,15 @@ nav a:nth-child(4){
     color: rgb(102, 102, 102);
 }
 .product .card .info .taille span{
-    font-weight: bold;
+    font-weight: 500;
     color: black;
     font-size: 19px;
-    border: 2px solid gray;
-    border-radius: 3px;
-    padding: 4px;
+    line-height: 19px;
 }
 .product .card .info .prix{
     font-weight: bold;
     font-size: 22px;
-    color: #ed1c24;
+    color: var(--hoverColor);
 }
 /* End product */
 
