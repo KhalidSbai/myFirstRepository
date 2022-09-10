@@ -24,14 +24,13 @@ let tableProduit = [
 ];
 
 const container = document.getElementById("container");
-console.log(container);
 let contenu = "";
 function pages() {
   tableProduit.forEach((element) => {
     contenu += `<div class="card">
     <div class="img">
       <img
-        src="ressources/${element.id}-min.png"
+        src="ressources/${element.id}-min.png"  id="${element.id}"
         alt=""
       />
     </div>
@@ -44,3 +43,19 @@ function pages() {
   container.innerHTML = contenu;
 }
 pages();
+
+//visualisaiton image
+const images = document.querySelectorAll(".img");
+const visualImg = document.getElementById("visualimg");
+const idVisualImg = document.getElementById("idvisualimg");
+
+images.forEach((element) => {
+  element.addEventListener("click", (e) => {
+    let idimg = e.target.id || e.target.children[0].id;
+    idVisualImg.setAttribute("src", "ressources/" + idimg + "-min.png");
+    visualImg.classList.toggle("desactive");
+  });
+});
+visualImg.addEventListener("click", () => {
+  visualImg.classList.toggle("desactive");
+});

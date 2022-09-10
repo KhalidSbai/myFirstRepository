@@ -102,6 +102,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9999;
 }
 .menu-item{
     border-radius: 10px;
@@ -160,7 +161,7 @@ nav a:nth-child(4){
     align-items: center;
     border-radius: 15px;
     background-color: #f0f0f0;
-    
+    cursor: pointer;
     min-height: 400px;
 }
 .product .card img{
@@ -229,4 +230,35 @@ nav a:nth-child(4){
     }
   }
 
+
+  .visualarticle{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .visualarticle.desactive{
+    display: none;
+  }
+  .visualarticle::before{
+    content: "";
+    position: absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgColor);
+    z-index: -1;
+    opacity: 0.8;
+  }
+  
+  .visualarticle .img{
+    opacity: 1;
+    z-index: 2;
+  }
 /* End Media query */
