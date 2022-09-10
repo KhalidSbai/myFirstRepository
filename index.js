@@ -14,13 +14,13 @@ menuItems.forEach((item) => {
 let tableProduit = [
   { id: 2, taille: 28, prix: 130 },
   { id: 3, taille: 27, prix: 90 },
-  { id: 1, taille: 28, prix: 80 },
-  { id: 4, taille: 29, prix: 90 },
-  { id: 5, taille: 28, prix: 70 },
-  { id: 6, taille: 29, prix: 110 },
-  { id: 7, taille: 28, prix: 80 },
-  { id: 8, taille: 28, prix: 85 },
-  { id: 9, taille: 29, prix: 85 },
+  { id: 1, taille: 28, prix: 65 },
+  { id: 4, taille: 29, prix: 85 },
+  { id: 5, taille: 28, prix: 80 },
+  { id: 6, taille: 29, prix: 90 },
+  { id: 7, taille: 28, prix: 50 },
+  { id: 8, taille: 28, prix: 60 },
+  { id: 9, taille: 29, prix: 50 },
 ];
 
 const container = document.getElementById("container");
