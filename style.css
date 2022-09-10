@@ -81,7 +81,8 @@ ul{
     z-index: 9999;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 .logo span{
     display: block;
@@ -225,9 +226,6 @@ nav a:nth-child(4){
   @media (min-width: 1200px) {
     .container {
       width: 1170px;
-    }
-    .product .container .card{
-        
     }
   }
 
