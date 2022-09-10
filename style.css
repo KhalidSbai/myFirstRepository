@@ -193,6 +193,40 @@ nav a:nth-child(4){
     font-size: 22px;
     color: var(--hoverColor);
 }
+
+/* Start image plein ecran */
+.visualarticle{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.visualarticle.desactive{
+  display: none;
+}
+.visualarticle::before{
+  content: "";
+  position: absolute ;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bgColor);
+  z-index: -1;
+  opacity: 0.95;
+}
+.visualarticle .itemimage img{
+  width: 100%;
+}
+/* End image plein ecran */
+
 /* End product */
 
 
@@ -229,36 +263,5 @@ nav a:nth-child(4){
       width: 1170px;
     }
   }
-
-
-  .visualarticle{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .visualarticle.desactive{
-    display: none;
-  }
-  .visualarticle::before{
-    content: "";
-    position: absolute ;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bgColor);
-    z-index: -1;
-    opacity: 0.95;
-  }
   
-  .visualarticle .img{
-    opacity: 1;
-    z-index: 2;
-  }
 /* End Media query */
